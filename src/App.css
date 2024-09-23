@@ -1,42 +1,125 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.left-pane {
+  width: 33%;
+  background-color: #f0f0f0;
+  padding: 20px 70px 20px 20px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#celebrities {
+  margin-right: 20em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.right-pane {
+  width: 67%;
+  background-color: #ffffff;
+  padding: 20px;
 }
 
 .card {
-  padding: 2em;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  margin-top: 0; 
 }
 
-.read-the-docs {
-  color: #888;
+.line {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.line label {
+  margin-right: 5px; 
+}
+
+.checkbox-group {
+  display: flex;
+  justify-content: space-between; 
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-item label {
+  margin-left: 1px;
+}
+
+
+select, input[type="checkbox"], input[type="date"] {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px; 
+}
+
+.third_line {
+  margin-left: -0.7em;
+}
+
+.third_line input, .third_line label{
+ margin-left: 1em;
+}
+
+.card_infos {
+ margin-top: 2em;
+}
+
+
+@media (max-width: 1024px) {
+
+  .left-pane {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .right-pane {
+    display: none; 
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .line {
+    flex-direction: column; 
+    align-items: flex-start;
+  }
+
+  .checkbox-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .left-pane {
+    padding: 10px;
+  }
+
+  .card {
+    padding: 10px;
+  }
+
+  .line {
+    margin-bottom: 15px;
+  }
+
+  .checkbox-group {
+    flex-direction: column; 
+    align-items: flex-start;
+  }
 }
