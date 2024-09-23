@@ -12,7 +12,7 @@ Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/repo-name.git
+   git clone [https://github.com/your-username/repo-name.git](https://github.com/tahiry-dev/patrimoine-front.git)
 
 
 2. cd repo-name
